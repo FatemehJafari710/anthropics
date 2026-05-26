@@ -1,0 +1,24 @@
+{
+  "name": "market-researcher",
+  "version": "1.0.0",
+  "description": "Market researcher agent plugin for analyzing market trends and data",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "agent",
+    "market",
+    "research",
+    "analysis"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
