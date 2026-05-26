@@ -1,0 +1,68 @@
+{
+  "name": "market-researcher",
+  "version": "1.0.0",
+  "type": "agent-plugin",
+  "description": "Market researcher agent plugin for analyzing market trends and data",
+  "author": "Your Organization",
+  "license": "MIT",
+  "capabilities": [
+    "market-analysis",
+    "trend-detection",
+    "competitor-analysis",
+    "intelligence-gathering"
+  ],
+  "actions": [
+    {
+      "name": "analyzeTrends",
+      "description": "Analyze market trends",
+      "parameters": {
+        "market": {
+          "type": "string",
+          "description": "Market segment to research",
+          "required": true
+        },
+        "options": {
+          "type": "object",
+          "description": "Research options",
+          "required": false
+        }
+      }
+    },
+    {
+      "name": "analyzeCompetitors",
+      "description": "Analyze competitors in an industry",
+      "parameters": {
+        "industry": {
+          "type": "string",
+          "description": "Industry to analyze",
+          "required": true
+        },
+        "competitors": {
+          "type": "array",
+          "description": "List of competitors",
+          "required": false
+        }
+      }
+    },
+    {
+      "name": "getIntelligence",
+      "description": "Get market intelligence",
+      "parameters": {
+        "query": {
+          "type": "string",
+          "description": "Research query",
+          "required": true
+        }
+      }
+    }
+  ],
+  "dependencies": [
+    "axios"
+  ],
+  "entry_point": "index.js",
+  "configuration": {
+    "api_key": "required",
+    "region": "optional",
+    "debug": "optional"
+  }
+}
